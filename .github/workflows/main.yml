@@ -8,7 +8,7 @@ jobs:
       - name: Hello world action step
         id: hello
         #uses: actions/hello-world-docker-action@v2
-        uses: fabrizzio-dotCMS/Docker-Container-Action/hello-world-docker-action
+        uses: ./ # Uses an action in the root directory
         with:
           who-to-greet: 'Fabrizzio'
       # Use the output from the `hello` step
